@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/order.css" />
+		<title>FAST- REGISTRATION</title>
+	</head>
+	<style>
+		body {
+			background-image: url("assets/images/iStock-690165678.jpg");
+		}
+	</style>
+	<body>
+		<div class="all">
+			<h3>Register Now</h3>
+
+			<div class="parent_div">
+				<div class="fom">
+					<p class="form-header">FACULTY REGISTRATION FORMS</p>
+
+					<form class="f" onsubmit="fish()">
+						<label for="name">Name:</label>
+						<br />
+						<input type="text" id="name" placeholder=" " required />
+						<span class="error">Please enter your name</span>
+
+						<label><h4>Index Number</h4></label>
+						<input
+							type="numberc"
+							name="indexnum"
+							id="Indexnum"
+							placeholder="Index Number"
+							required
+						/><br /><br />
+						<label><h4>Email</h4></label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder=" Email"
+							required
+						/>
+
+						<label><h4>Password</h4></label>
+						<input
+							type="password"
+							name="password"
+							id="email"
+							placeholder=""
+							pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+							required
+						/>
+						<span class="error">Please enter a valid email address</span>
+						/><br /><br />
+						<label><h4>Student ID</h4></label>
+						<input
+							type="text"
+							name="order"
+							id="Order"
+							placeholder="Student ID"
+							required
+						/><br /><br />
+						<label><h4>Address</h4></label>
+						<input
+							type="text"
+							name="place"
+							id="place"
+							placeholder="Address"
+							required
+						/><br /><br />
+						<label><h4>Contact Number</h4></label>
+						<input
+							type="Contact"
+							name="contact"
+							id="contact"
+							placeholder="Contact"
+							required
+						/><br /><br />
+
+						<div class="but">
+							<button type="submit">DONE</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function fish() {
+				let message = document.getElementById("message");
+				event.preventDefault();
+				message.style.display = "block";
+			}
+		</script>
+	</body>
+</html>
